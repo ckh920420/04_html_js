@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table, th, td {
+					border : 1px solid black;
+	 }
+</style>
+
+<link >
+</head>
+<body>
+<!-- 어떤 사이트에 가입하는 가입 폼을 작성 
+ form : name : memberForm, action : 기본 값
+ 이름     => type: text,     
+             size : 10, name : userName
+ 아이디   => type: text,     
+             size : 10, name : userId
+ 비밀번호 => type: password, size : 10, 
+             name : userPass
+ 비번확인 => type: password, size : 10, 
+             name : passConfirm
+ 성별     => type: radio, 남, 녀        
+             name : gender
+ 연령대   => type: select, 10대 ~ 80대, 80대 이상, 
+             name : age
+ 취미     => type: checkbox             
+             name : hobby
+ 전화번호 => type: select + input + input, 
+             name : phone1, phone2, phone3
+ 주소     => type: select               
+             name : address
+ 소개말   => type: textarea             
+             name : intro
+ 전송, 초기화 => type: submit, reset
+     
+-->
+
+</body>
+<h3>가입지원서</h3>
+<hr />
+
+
+
+
+<form action="" name="memberForm">
+<!-- table>(tr>(th*4))>(tr>(td*4))*10>input[type="" name=""] -->
+<table>
+	<tr>
+		<th colspan="2">지원서</th>
+<!-- 		<th></th> -->
+
+	</tr>
+	<tr>
+		<td>이름</td>
+		<td><input type="text" name="userName" size="10"/></td>
+
+	</tr>
+	<tr>
+		<td>아이디</td>
+		<td><input type="text" size="10" name="userId" /></td>
+
+	</tr>
+	<tr>
+		<td>비밀번호</td>
+		<td><input type="password" size="10" name="userPass" /></td>
+
+	</tr>
+	<tr>
+		<td>비번확인</td>
+		<td><input type="password" size="10" name="passConfig" /></td>
+
+	</tr>
+	<tr>
+		<td>성별</td>
+		<td>
+			<input type="radio" name="gender" value="F" checked="checked"/>여성
+			<input type="radio" name="gerder" value="M" />남성
+		</td>
+
+	</tr>
+	<tr>
+		<td>연령</td>
+		<td></td>
+
+	</tr>
+	<tr>
+		<td>취미</td>
+		<td></td>
+
+	</tr>
+	<tr>
+		<td>전화번호</td>
+		<td></td>
+
+	</tr>
+	<tr>
+		<td>주소</td>
+		<td></td>
+
+	</tr>
+	<tr>
+		<td>소개말</td>
+		<td></td>
+
+	</tr>
+	<br />
+</table>
+	
+</form>
+</body>
+
+</html>

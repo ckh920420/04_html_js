@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03 table span</title>
+<style type="text/css">
+	table {
+			border : 1px solid black;
+	}
+	
+	tr {
+			border : 1px solid green;
+	}
+	
+	th {
+			border: 1px solid blue;
+	}
+	
+	td{
+			border: 1px solid red;
+	}
+
+</style>
+</head>
+<body>
+
+<!-- 	테이블의 셀병합
+		: 병합을 진행할 각각의 td, th의 시작태그에
+			colspan,rowspan의 속성을 사용하여 셀 병합 적용 -->
+			
+<!-- 	첫 행이 헤더이고, 나머지는 일반 행인 총 4x4 테이블을 작성 -->
+<!-- 	table>(tr>th{제목$}*4)+(tr>td{$}*4)*3 -->
+	<table>
+		<tr>
+			<th colspan="2">제목1</th>
+<!-- 			<th>제목2</th> -->
+			<th>제목3</th>
+			<th>제목4</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td colspan="2">3</td>
+<!-- 			<td>4</td> -->
+		</tr>
+		<tr>
+			<td>5</td>
+			<td rowspan="2">6</td>
+			<td>7</td>
+			<td>8</td>
+		</tr>
+		<tr>
+			<td>9</td>
+<!-- 			<td>10</td> -->
+			<td>11</td>
+			<td>12</td>
+		</tr>
+	</table>
+	
+<!-- 	colespan : 오른쪽 방향의 셀과 병합
+		rowspan  : 아래방향의 셀과 병합 -->
+	
+	
+</body>
+</html>
